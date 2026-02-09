@@ -9,6 +9,7 @@
 - 
 
 ## Setup
+
 - Backend:
 - Model (if any):
 - Concurrency:
@@ -16,7 +17,7 @@
 
 ## Result Summary (TL;DR)
 
-- 
+- run： ```go run main.go```
 
 ## Next Action
 
