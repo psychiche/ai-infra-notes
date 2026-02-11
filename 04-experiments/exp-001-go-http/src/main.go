@@ -14,6 +14,10 @@ func main() {
 		w.WriteHeader(http.StatusOK)
 		_, _ = w.Write([]byte("OK\n"))
 	})
+	mux.HandleFunc("/unhealthz", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+		_, _ = w.Write([]byte("Not OK\n"))
+	})
 
 	addr := ":8080"
 	srv := &http.Server{
